@@ -93,3 +93,73 @@ header h1 {
   color: red;
   margin-top: 20px;
 }
+
+@media (max-width: 900px) {
+  .search-header input {
+    width: 70%;
+    max-width: 320px;
+  }
+  .search-header button {
+    margin-top: 10px;
+    width: 160px;
+  }
+  .search-header {
+    padding: 25px 15px;
+  }
+  #movieDetails {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .search-header input {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+  .search-header button {
+    padding: 9px 14px;
+    font-size: 0.9rem;
+  }
+  #movieDetails {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .search-header {
+    padding: 20px 10px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+  .search-header input {
+    width: 90%;
+  }
+  .search-header button {
+    width: 90%;
+    margin-left: 0;
+  }
+  #movieDetails {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+  .search-header input {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+  .search-header button {
+    font-size: 0.85rem;
+    padding: 9px 12px;
+  }
+  #movieDetails {
+    width: 95%;
+  }
+}

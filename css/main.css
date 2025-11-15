@@ -160,3 +160,106 @@ body {
   margin: auto;
   width: 65%;
 }
+
+@media (max-width: 1400px) {
+  .movies-grid {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .movies-grid {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .movies-grid {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movie-card {
+    border-radius: 10px;
+  }
+  .poster img {
+    border-radius: 0;
+  }
+  .modal-content {
+    max-width: 500px;
+  }
+  .modal-poster {
+    width: 160px;
+  }
+}
+
+@media (max-width: 700px) {
+  .movies-grid {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .movies-grid {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .movie-card:hover {
+    transform: translateY(-10px);
+  }
+  .poster img {
+    height: auto;
+  }
+  .modal-content {
+    padding: 16px;
+  }
+  .modal-poster {
+    width: 140px;
+  }
+  .modal-info h2 {
+    font-size: 1.1rem;
+  }
+  .modal-info p {
+    font-size: 0.9rem;
+  }
+  .watch-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 12px;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+  .hero p {
+    font-size: 0.85rem;
+  }
+  .movie-card {
+    border-radius: 8px;
+  }
+  .modal-content {
+    width: 92%;
+  }
+  .modal-poster {
+    width: 120px;
+  }
+}

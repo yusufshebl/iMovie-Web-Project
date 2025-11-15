@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #081628;
+  color: #111;
+}
+
+.navbar {
+  padding: 15px;
+  background: #09182c;
+  box-shadow: 0 2px 8px rgba(107, 90, 90, 0.604);
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+.navbar a:hover {
+  color: #d00;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 0;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #bbbbbb;
+}
+.hero p {
+  margin-top: 8px;
+  color: #cccccc;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.2s;
+}
+.movie-card:hover {
+  transform: translateY(-20px);
+  background-color: #0d223e;
+  color: white;
+}
+
+.poster {
+  position: relative;
+}
+.poster img {
+  width: 100%;
+  display: block;
+}
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #1a2e4e;
+  padding: 6px 10px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.info {
+  padding: 12px;
+}
+.info h3 {
+  margin: 0;
+}
+.info p {
+  margin: 6px 0;
+  color: #666;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating {
+  font-weight: bold;
+}
+.details-btn {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.details-btn:hover {
+  background: #eee;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.modal.open {
+  display: flex;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  z-index: 150;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.modal-poster {
+  width: 200px;
+  border-radius: 10px;
+}
+.modal-info {
+  margin-top: 12px;
+}
+.watch-btn {
+  margin-top: 10px;
+  background: #0ea5a4;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8p;
+}
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+.movies-grid {
+  margin: auto;
+  width: 65%;
+}

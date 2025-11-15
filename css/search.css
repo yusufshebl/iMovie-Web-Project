@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #081628;
+  color: #000000;
+}
+
+.navbar {
+  padding: 15px;
+  background: #081628;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ccc;
+}
+.navbar a:hover {
+  color: #d00;
+  transition: 0.3s;
+}
+
+header h1 {
+  color: #ccc;
+}
+
+.search-header {
+  text-align: center;
+  padding: 30px;
+  background: #0b1b31;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-header input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-header button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  margin-left: 10px;
+  border: none;
+  background: #043434;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-header button:hover {
+  background: #4b0707;
+  transition: 0.3s;
+}
+
+.result-area {
+  padding: 20px;
+}
+
+.movie-details {
+  width: 55%;
+  background: white;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: none;
+}
+
+.movie-details img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-details .info {
+  padding: 20px;
+}
+
+.movie-details .info h2 {
+  margin: 0 0 10px;
+}
+
+.movie-details .info p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+}

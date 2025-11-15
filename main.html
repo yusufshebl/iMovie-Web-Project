@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trending Movies</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+    </nav>
+    <header class="hero">
+      <h1>Trending Right Now</h1>
+      <p>Explore Trending Movies</p>
+    </header>
+
+    <main class="movies-grid">
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 1.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>Harry Potter And The Deathly Hallows Part I</h3>
+          <p>Family • Fantasy • 2010</p>
+          <div class="footer">
+            <span class="rating">★ 7.7</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 2.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>Interstellar</h3>
+          <p>Sci-fi • Adventure • 2014</p>
+          <div class="footer">
+            <span class="rating">★ 8.7</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 3.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>Inception</h3>
+          <p>Sci-fi • Action • 2010</p>
+          <div class="footer">
+            <span class="rating">★ 8.8</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 4.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>The Departed</h3>
+          <p>Crime • Thriller • 2006</p>
+          <div class="footer">
+            <span class="rating">★ 8.5</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 5.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>500 Days Of Summer</h3>
+          <p>Romance • Comedy • 2009</p>
+          <div class="footer">
+            <span class="rating">★ 8.4</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 6.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>The Dark Knight</h3>
+          <p>Crime • Action • 2008</p>
+          <div class="footer">
+            <span class="rating">★ 7.6</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 7.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>Fight Club</h3>
+          <p>Crime • Action • 1999</p>
+          <div class="footer">
+            <span class="rating">★ 8.8</span>
+          </div>
+        </div>
+      </article>
+      <article class="movie-card">
+        <div class="poster">
+          <img
+            src="drive-download-20251114T065746Z-1-001/movie card 8.jpg"
+            alt="Movie Poster"
+          />
+          <span class="badge">Trending</span>
+        </div>
+        <div class="info">
+          <h3>The Green Mile</h3>
+          <p>Crime • Fantasy • 1999</p>
+          <div class="footer">
+            <span class="rating">★ 8.6</span>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div class="modal" id="movieModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">×</button>
+
+        <img id="modalPoster" src="" alt="Poster" class="modal-poster" />
+
+        <div class="modal-info">
+          <h2 id="modalTitle">Movie Title</h2>
+          <p id="modalMeta">Genre • Year</p>
+          <p id="modalDesc">Description goes here.</p>
+
+          <button class="watch-btn">Watch Now</button>
+        </div>
+      </div>
+
+      <div class="modal-backdrop" onclick="closeModal()"></div>
+    </div>
+  </body>
+</html>
